@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page-proj",
+  "version": "1.0.0",
+  "description": "A project to test my knowledge of package managers and module bundlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "npx webpack",
+	"watch": "npx webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcarron/restaurant-page-proj.git"
+  },
+  "author": "Alex Carron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcarron/restaurant-page-proj/issues"
+  },
+  "homepage": "https://github.com/alexcarron/restaurant-page-proj#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
