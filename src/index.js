@@ -1,7 +1,9 @@
-import {home_page} from './page_builders/home'
-import {menu_page} from './page_builders/menu'
-import {contact_page} from './page_builders/contact'
-import {createHeader} from './page-load'
+import {home_page} from './page_builders/home';
+import {menu_page} from './page_builders/menu';
+import {contact_page} from './page_builders/contact';
+import {createHeader, createNav} from './page_builders/page-load';
+import './styles/meyer-reset.css';
+import './styles/main.css';
 
 document.body.onload = function() {
 	let webpage_content_container = document.createElement("main"),
@@ -15,6 +17,7 @@ document.body.onload = function() {
 		webpage_content_container.innerHTML = pages[page_name].innerHTML
 	}
 	
+	document.body.append(createNav());
 	document.body.append(createHeader());
 	document.body.append(webpage_content_container);
 	displayPage("home");
