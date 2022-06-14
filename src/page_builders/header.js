@@ -2,8 +2,8 @@ import createElement from '../element_constructor'
 
 function createHeader() {
 	let header_elm = createElement("header"),
-			logo_elm = createElement("img", "", {src: "../src/logo.jpg", alt: "Restaurant Logo"}),
-			h1_elm = createElement("h1", "Welcome to the Best Restaurant");
+			logo_elm = createElement("img", "", {src: "../src/images/restaurant-logo.png", alt: "Restaurant Logo"}),
+			h1_elm = createElement("h1", "The Best Restaurant");
 	
 	header_elm.append(logo_elm);
 	header_elm.append(h1_elm);
