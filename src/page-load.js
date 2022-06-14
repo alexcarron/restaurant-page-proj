@@ -8,7 +8,16 @@ function createHeader() {
 				pages = ["Home", "Menu", "Contact"];
 		
 	for (let page of pages) {
-		nav_elm.append( createElement("p", page) );
+		let nav_link = createElement(
+			"p", 
+			page, 
+			{
+				class: `nav_link`,
+				["data-page-name"]: page.toLowerCase(),
+			}
+		)
+		
+		nav_elm.append(nav_link);
 	}
 	
 	header_elm.append(logo_elm);
