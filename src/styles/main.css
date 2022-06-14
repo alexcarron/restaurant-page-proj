@@ -20,10 +20,10 @@ body
 /* ^ HEADER */
 header {
 	box-sizing: border-box;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
 	
 	background: var(--very-dark-color);
 	
@@ -44,10 +44,10 @@ header {
 /* ^ NAV */
 nav {
 	box-sizing: border-box;
-	
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	padding: 10px;
 	
 	box-shadow: 0 0 2vw #000000;
 	
@@ -58,7 +58,7 @@ nav {
 }
 		
 	/* ! NAVIGATION MENU LINKS */
-	nav a {
+	nav>* {
 		box-sizing: border-box;
 		
 		padding: 0 15px;
@@ -68,10 +68,11 @@ nav {
 		font-size: 16pt;
 		font-weight: bold;
 		
+		cursor: pointer;
 		transition: filter 150ms ease;
 	}
 
-	nav a:hover {
+	nav>*:hover {
 		filter: brightness(150%);
 	}
 	
