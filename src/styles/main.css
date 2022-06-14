@@ -1,0 +1,202 @@
+/* Alexander Carron - INSERT DATE */
+:root {
+	--most-light-color: #FFFFFF;
+	--very-light-color: #E6E6E6;
+	--call-to-action-color: #ffbf00;
+	--bright-color: #2957c2;
+	--light-color: #3055aa;
+	--dark-color: #265471;
+	--very-dark-color: #343434;
+	--most-dark-color: #000000;
+}
+
+html {
+	background: var(--very-light-color);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+
+/* ^ HEADER */
+header {
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background: var(--very-dark-color);
+	
+	text-align: center;
+	color: var(--very-light-color);
+}
+		
+	header h1 {
+		font-weight: bold;
+		font-size: 48pt;
+	}
+	
+	header img {
+		margin-right: 20px;
+		height: 80px;
+	}
+	
+/* ^ NAV */
+nav {
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	box-shadow: 0 0 2vw #000000;
+	
+	background: #000000A0;
+	padding-left: 20px;	
+	
+	z-index: 1;
+}
+		
+	/* ! NAVIGATION MENU LINKS */
+	nav a {
+		box-sizing: border-box;
+		
+		padding: 0 15px;
+		
+		color: var(--very-light-color);
+		text-decoration: none;
+		font-size: 16pt;
+		font-weight: bold;
+		
+		transition: filter 150ms ease;
+	}
+
+	nav a:hover {
+		filter: brightness(150%);
+	}
+	
+
+/* ^ MAIN */
+	/* @ SECTIONS */
+	main>section {
+		box-sizing: border-box;
+		
+		padding: 60px 50px;
+		
+		background: var(--most-light-color);
+		color: var(--most-dark-color);
+	}
+
+		/* ! Every Other Section */
+		main>section:nth-child(2n) {
+			background: var(--very-light-color);
+		}
+		
+		/* ! Section Header */
+		main>section h2 {
+			font-size: 36pt;
+			color: var(--dark-color);
+			font-weight: bold;
+		}
+
+		/* ! Section Sub-Headers */
+		main>section h3 {
+			font-size: 28pt;
+			margin-top: 20px;
+			font-weight: bold;
+		}
+
+		/* ! Section Body Paragraph Text */
+		main>section p {
+			font-size: 14pt;
+			margin-top: 10px;
+		}
+		
+/* ^ FOOTER */
+footer {
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	
+	background-color: var(--most-dark-color);
+	color: var(--most-light-color);
+	text-align: center;
+}
+	
+	/* @ Footer Sections */
+	footer section {
+		margin: 20px 10px;
+	}
+
+		/* ! Footer Links */
+		footer a {
+			color: var(--call-to-action-color);
+			font-weight: normal;
+		}
+
+		/* ! Footer Headers */
+		footer h2 {
+			font-size: 18pt;
+			font-weight: bold;
+
+			margin-bottom: 10px;
+		}
+
+		/* ! Footer Body Paragraph Text */
+		footer p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			font-size: 13pt;
+			font-weight: normal;
+		}
+		
+		/* ! Footer Tiny Icons */
+		footer img {
+			height: 13pt;
+			margin: 0 5px;
+		}
+
+
+
+/* * Font Styling */
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 800;
+}
+
+/* * Flex Templates */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* * Grid Templates */
+.grid-contianer {
+	display: grid;
+	grid-template: 
+		1fr / 
+			1fr;
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+	gap: 0px;
+}
+
+/* * Inputs */
+div.input{
+	display: flex;
+	flex-direction: column;
+}
+
+/* * Input Labels */
+label {
+	font-weight: 550;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
